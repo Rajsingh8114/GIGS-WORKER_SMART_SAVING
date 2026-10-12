@@ -1,0 +1,14 @@
+{
+  "name": "gigsave",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart money management for the gig economy (FastAPI backend + static frontend).",
+  "scripts": {
+    "dev": "npm run setup && npm run seed:if-empty && npm start",
+    "build": "npm run setup && npm run seed:if-empty && npm start",
+    "setup": "python3 -m venv backend/.venv && backend/.venv/bin/pip install -q -r backend/requirements.txt",
+    "seed:if-empty": "[ -f database/gigsave.db ] || (cd backend && .venv/bin/python seed.py)",
+    "seed": "cd backend && .venv/bin/python seed.py",
+    "start": "bash run.sh"
+  }
+}

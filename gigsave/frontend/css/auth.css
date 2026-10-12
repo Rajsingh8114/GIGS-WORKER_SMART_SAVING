@@ -1,0 +1,33 @@
+.auth-page {
+  min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 540px);
+  background: var(--background);
+}
+.auth-story {
+  position: relative; padding: 48px 7vw; display: flex; flex-direction: column; justify-content: center; overflow: hidden; color: #eafaf2;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(52, 211, 153, 0.35), transparent 42%),
+    radial-gradient(circle at 10% 95%, rgba(244, 185, 90, 0.22), transparent 40%),
+    #07271c;
+}
+.auth-story .logo { color: #f1faf5; }
+.auth-story h1 { font-size: clamp(38px, 5.6vw, 70px); line-height: 1.02; margin: 34px 0 18px; font-weight: 800; color: #f4fcf8; }
+.auth-story p { color: rgba(234, 250, 242, 0.75); font-size: 18px; max-width: 560px; }
+.auth-bullets { display: grid; gap: 12px; margin-top: 28px; padding: 0; list-style: none; }
+.auth-bullets li { display: flex; align-items: center; gap: 12px; color: rgba(234, 250, 242, 0.9); font-weight: 600; }
+.auth-bullets .icon { width: 28px; height: 28px; padding: 6px; border-radius: 9px; background: rgba(52, 211, 153, 0.18); color: #6ee7b7; }
+.auth-panel { min-height: 100vh; display: grid; place-items: center; padding: 28px; position: relative; }
+.auth-card { width: 100%; max-width: 430px; padding: 30px; }
+.auth-card h2 { margin: 0 0 6px; font-size: 30px; font-weight: 800; }
+.auth-card p { margin-top: 0; color: var(--muted); }
+.auth-form { display: grid; gap: 14px; margin-top: 22px; }
+.auth-meta { margin-top: 18px; color: var(--muted); text-align: center; }
+.auth-meta a { color: var(--primary-dark); font-weight: 800; }
+.auth-theme { position: absolute; top: 18px; right: 18px; }
+.demo-note { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 12px; background: var(--accent-soft); font-size: 14px; font-weight: 600; color: var(--text); }
+@media (max-width: 880px) {
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-story { min-height: auto; padding: 28px 22px 34px; }
+  .auth-story h1 { font-size: 38px; margin-top: 22px; }
+  .auth-bullets { display: none; }
+  .auth-panel { min-height: auto; padding: 20px; }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | GigSave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <script src="js/theme.js"></script>
+</head>
+<body class="auth-page">
+  <section class="auth-story">
+    <a class="logo" href="index.html"><span class="logo-mark">G</span><span>GigSave</span></a>
+    <h1>Earn. Save. Grow.</h1>
+    <p>Create a protected account and start turning irregular income into steady savings.</p>
+    <ul class="auth-bullets">
+      <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> AI-assisted daily Auto-Save</li>
+      <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg> Income and spending insights</li>
+      <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Guardrails that protect your cash</li>
+    </ul>
+  </section>
+  <section class="auth-panel"><button class="icon-btn auth-theme" data-theme-toggle aria-label="Toggle dark mode"></button><div class="card auth-card"><h2>Create account</h2><p>Set your gig profile and baseline risk preference.</p><form id="registerForm" class="auth-form"><div class="field"><label for="name">Full name</label><input class="input" id="name" name="name" required></div><div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" required></div><div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" minlength="6" required></div><div class="field"><label for="gig">Gig platform</label><select id="gig" name="gig_platform"><option>Uber</option><option>Swiggy</option><option>Zomato</option><option>Freelance</option><option>Other</option></select></div><div class="field"><label for="inc">Monthly income estimate</label><input class="input" id="inc" name="monthly_income_estimate" type="number" min="0" required></div><div class="field"><label for="risk">Risk preference</label><select id="risk" name="risk_profile"><option>Conservative</option><option selected>Moderate</option><option>Growth</option></select></div><button class="btn btn-primary">Create account</button></form><div class="auth-meta">Already registered? <a href="login.html">Log in</a></div></div></section>
+  <script src="js/api.js"></script><script src="js/auth.js"></script>
+</body>
+</html>
